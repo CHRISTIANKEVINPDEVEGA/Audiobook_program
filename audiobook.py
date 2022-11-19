@@ -3,7 +3,8 @@ import PyPDF2
 
 print("Welcome to the Audio book program")
 
-pdf_book = open("Overlord_Vol1.pdf")
+book_name=input("Enter the pdf file you want to use: ")
+pdf_book = open(book_name)
 pdf_reader=PyPDF2.PdfFileReader("Overlord_Vol1.pdf")
 content_pages=pdf_reader.numPages
 print(f"Number of Pages of the pdf book: {content_pages}")
